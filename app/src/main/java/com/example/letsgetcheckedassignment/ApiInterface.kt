@@ -11,6 +11,6 @@ interface ApiInterface {
         "x-rapidapi-key:804fe48456msh73835d4c2e34dddp1291a1jsn3847ab1f6f0d"
     )
     @GET(".")
-    fun getPhotos(): Call<List<DataModel>>
+    fun getData(): Call<List<DataModel>>
 
 }

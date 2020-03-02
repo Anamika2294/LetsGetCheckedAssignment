@@ -12,7 +12,7 @@ class apiTest {
     @Test
     fun `can get country data`() {
         // call the api
-        val response = ApiClient.getClient.getPhotos().execute()
+        val response = ApiClient.getClient.getData().execute()
         // verify the response is OK
         response.body()?.get(0)?.name
         assertThat(response.code(), `is`(equalTo(200)))
